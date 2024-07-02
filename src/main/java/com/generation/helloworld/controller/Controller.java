@@ -1,5 +1,7 @@
 package com.generation.helloworld.controller;
 
+import java.util.Arrays;
+import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,7 +29,18 @@ public class Controller {
 	}
 	
 	@GetMapping("/objetivos")
-	public String objetivos() {		
-		return null;
+	public List<String> objetivos() {		
+		return Arrays.asList(
+				"Aprender Java",
+				"Aprender Spring Boot",
+				"Aprender mais sobre API",
+				"Criar um Projeto ponta a ponta",
+				"Ficar Fluente em Inglês",
+				"Conseguir produzir uma música própria",
+				"Criar um Projeto com meus amigos",
+				"Tirar minha CNH",
+				"Me Formar na Faculdade",
+				"Conseguir um Emprego"
+				);
 	}
 }
