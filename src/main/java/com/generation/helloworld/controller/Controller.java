@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
-public class HelloWorldController {
+public class Controller {
 
 	@GetMapping("/hello-world")
 	public String helloWorld() {
@@ -15,8 +15,15 @@ public class HelloWorldController {
 	}
 	
 	@GetMapping("/bsm")
-	public String exemplo() {
-		return "exemplo";
+	public String bsm() {
+		return "Proatividade\n"
+				+ "Persistência\n"
+				+ "Comunicação\n"
+				+ "Trabalho em Equipe\n"
+				+ "Respeito\n"
+				+ "Gestão de Tempo\n"
+				+ "Responsabilidade Pessoal\n"
+				+ "Orientação ao Futuro";
 	}
 	
 	@GetMapping("/objetivos")
